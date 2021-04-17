@@ -1,4 +1,4 @@
-const { TestScheduler } = require("@jest/core");
+
 const Enemy = require("../lib/Enemy");
 const Potion = require("../lib/Potion");
 
@@ -34,7 +34,7 @@ test("checks if enemy is alive or not", () => {
 });
 
 test("gets enemy's attack value", () => {
-  const enemy = new Enemy("goblin", "sword");
+  const enemy = new Enemy('goblin', 'sword');
   enemy.strength = 10;
 
   expect(enemy.getAttackValue()).toBeGreaterThanOrEqual(5);
